@@ -1,0 +1,20 @@
+1.向GitHub更新代码
+
+1）在teacher-Yu文件夹里，右击空白处，出现黑框
+2）黑框内输入 git status ,用于查看当前目录内文件状态，Untracked files: 下显示的红色文件就是还没有提交到GitHub上的文件
+3）git add xxx, xxx 是要添加的文件，多个文件可以多次添加
+4）git add xxx 之后，再用 git status查看状态，发现 Changes to be committed: 下出现绿色显示的文件， 表示已经告知程序此文件需要被提交
+4）执行git commit ,这样就把代码打包到当前目录的 .git 内了，这个地方的文件用于上传到GitHub
+5）执行git push ,代码就上传啦
+
+
+2. 在下载新代码之前
+1） 新代码一定是别人更新到GitHub上所以你机器上没有，所以要在GitHub上先把别人的更新拿过来
+2）进入 https://github.com/YuanyuanXiong/teacher-Yu 
+3）点 Pull requests 菜单，下边会有一个列表，每一个选项下边会有一行小字 opened xxx ago by DonghaiYu(xxx是时间), 点击标题进入新的页面
+4）下拉会有个 Merge pull request 的绿色按钮，然后会出现一个 Confirm merge 的绿色按钮，点击它，就完成代码合并了
+5）代码合并后就可以执行 3.从GitHub下载新代码 的操作，把新代码更新到自己电脑啦！
+
+3. 从GitHub下载新代码
+1）在teacher-Yu文件夹里，右击空白处，出现黑框
+2）黑框内输入 git pull 就能把GitHub上的代码拉下来

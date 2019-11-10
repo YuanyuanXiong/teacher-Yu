@@ -73,3 +73,47 @@ print(sex_result)
 # 改变 stature 和 is_beard 的值，看看程序能不能分辨男女吧
 
 
+# 2019.11.3 variate - part3(变量3)
+# 上两节已经学习了 整数、小数（浮点数）、布尔、字符串 类型的变量，这些都是最基本的python变量类型
+# 本节继续学习变量类型，在基本变量类型之上还有哪些常用类型
+print("\n*** 2019.11.3 variate-part3 ***")
+
+# 列表变量，也叫 list 变量， 也叫数组（虽然字面上是数组，实际上是各种类型都可以的组）
+empty_list = [] # 最简单的列表，中括号表示列表，中间没有任何东西，空的列表
+name_list = ["XYY", "YDH"] # 列表中的每一项叫做“元素”， 可以是任意类型的数据，元素之间用逗号隔开， 注意逗号之后最好有个空格（规范）；这里有个名字的列表，有两个元素，都是字符串类型的
+is_man = False
+other_list = [100, 100.0, 'Hello World!', is_man] # 列表中的元素可以同时存在多种类型
+nest_list = [[1, 2, 3], [4, 5, 6]] # 瞧瞧，列表的元素还可以是列表，这就是嵌套列表；这里嵌套了两层列表，叫做二维数组， 或 二维列表
+
+print(empty_list)
+print(name_list)
+print(other_list)
+print(nest_list)
+
+# 很容易的，想用列表中的某个元素只需要知道这个元素的顺序
+order_list = [1, 2, 3, 4, 5]
+print(order_list[2]) # 列表变量后跟[x] 表示列表中第 x + 1 个元素，这也表明了列表中的元素是有顺序的， 也可以通过这种方式改变某个元素的值
+order_list[2] = 100 # 修改第三个元素为 100
+print(order_list)
+
+# 字典变量，也叫 dict变量
+# 字典是一种 key - value 格式的变量，key在字典中是不能重复的
+empty_dict = {} # 字典用大括号表示，这是一个空字典
+id_name_dict = {2: "XYY", 1: "YDH"} # 字典跟列表一样是由元素组成的，元素格式是 xxx: yyy, xxx 就是key, 基本python类型都可以作为key， yyy就是key对应的值， value不限制类型
+print(empty_dict)
+print(id_name_dict) # 输出会发现元素之间的顺序跟写的不一致，这也表明了字典中的元素是无序的，只能按 key 取值
+print(id_name_dict[1]) # 取某一个key对应的value， 格式跟列表一样，中括号内写 key， 同样方式可以更改value值
+id_name_dict[1] = "Dylan"
+print(id_name_dict)
+
+## 拓展思考
+#1. 计算机中的数据库要求最基本的 增、删、改、查， 列表 和字典挺像一个微型的数据库， 它们也支持这些操作，去 google一下看看这些操作该怎么做吧～
+#2. 字典中的key是唯一的，也就是不会有完全相同的两个key，在实际应用中有什么意义呢？想象作者当初为什么这么设计
+
+
+
+
+
+
+
+
